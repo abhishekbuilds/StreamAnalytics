@@ -1,0 +1,12 @@
+cd Documents/Project/advancedDbms
+zookeeper-server-start kafka_2.12-3.6.0/config/zookeeper.properties
+kafka-server-start kafka_2.12-3.6.0/config/server.properties
+python3 finnhubSocket.py
+
+
+
+spark-3.5.0-bin-hadoop3/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 your.py
+
+
+kafka_2.12-3.6.0/bin/kafka-topics.sh --delete --topic two --bootstrap-server localhost:9092
+kafka_2.12-3.6.0/bin/kafka-topics.sh --create --topic two --bootstrap-server localhost:9092 

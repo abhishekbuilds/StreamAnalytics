@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comparative Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@latest"></script>
+</head>
+<body>
+    <header>
+        <h1>Realtime Comparative Analytics of Stocks/CryptoCurrencies</h1>
+    </header>
+
+    <div class="sub-header">
+        <h2>Bitcoin V/S Ethereum</h2>
+    </div>
+
+    <main>
+        <div class="chart-container">
+            <div class="chart" id="chart1">
+                <h3>BTC Average Volume</h3>
+                <canvas id="btcVolumeChart"></canvas>
+            </div>
+            <div class="chart" id="chart2">
+                <h3>ETH Average Volume</h3>
+                <canvas id="ethVolumeChart"></canvas>
+            </div>            
+            <div class="chart" id="chart3">
+                <h3>BTC vs ETH Average Prices</h3>
+                <canvas id="priceComparisonChart"></canvas>
+            </div>
+            <div class="chart" id="chart4">
+                <h3>BTC vs ETH Trade Count in Last 5 Seconds</h3>
+                <canvas id="tradeCountChart"></canvas>
+            </div>
+            <div class="chart" id="chart5">
+                <h3>Avg BTC Price (Logarithmic Scale)</h3>
+                <canvas id="btcAvgPriceLogChart"></canvas>
+            </div>
+            <div class="chart" id="chart6">
+                <h3>Avg ETH Price (Logarithmic Scale)</h3>
+                <canvas id="ethAvgPriceLogChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Abhishek Singh & Gautam Aneja</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
