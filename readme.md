@@ -29,7 +29,7 @@ This project, is developed to enhance investors' ability to make informed decisi
 - Apache Spark
 
 ### Setup
-1. Clone the repository:
+1. Clone the repository: github.com/abhishekbuilds/StreamAnalytics
 2. Install Python packages: pip install -r requirements.txt
 
 ### Configuration
