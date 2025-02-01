@@ -2,8 +2,7 @@
 
 ## Created By 
 - Abhishek Singh (885199042)
-- Gautam Aneja (885156869)
-
+  
 ## Overview
 This project, is developed to enhance investors' ability to make informed decisions swiftly by providing access to real-time stock market data and analysis tools. This platform captures live trade data from Finnhub WebSocket and utilizes Kafka for data distribution, Apache Spark for stream processing, and Flask for backend implementation.
 
